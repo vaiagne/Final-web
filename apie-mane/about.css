@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #777;
+  line-height: 1.6;
+  background-color: #f8f2e5;
+}
+
+header {
+  background-color: #212121;
+  padding: 6px 0;
+  color: #f8f8f8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .header-container .logo {
+  display: inline-block;
+}
+header .header-container .logo img {
+  max-width: 70px;
+  width: 100%;
+}
+header .header-container .logo:hover {
+  transform: scale(1.05);
+}
+header .header-container .main-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+header .header-container .main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header .header-container .main-nav ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+header .header-container .main-nav ul li a:hover {
+  color: #919191;
+}
+header .header-container .contact-button .button {
+  background-color: transparent;
+  color: #f8f8f8;
+  padding: 6px 12px;
+  border: 2px solid #919191;
+  text-decoration: none;
+  font-weight: 300;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+header .header-container .contact-button .button:hover {
+  background-color: #f8f8f8;
+  color: #212121;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.about-section .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  position: relative; /* Enable positioning for the text card */
+}
+.about-section .row .image-container {
+  flex: 1;
+  padding: 0 20px;
+}
+.about-section .row .image-container img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.about-section .row .text-container {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  color: #333;
+  max-width: 600px;
+  border-left: 5px solid #919191;
+  padding: 40px; /* Increased padding for spacing */
+}
+.about-section .row .text-container h2 {
+  font-size: 32px;
+  color: #212121;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.about-section .row .text-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-top: 15px;
+}
+.about-section .reverse-row {
+  flex-direction: row-reverse;
+}
+.about-section .reverse-row .text-container {
+  border-right: 5px solid #919191; /* Move the border to the right side */
+  border-left: none;
+}
+
+footer {
+  background-color: #212121;
+  color: #f8f8f8;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+}
+footer .footer-logo a {
+  display: inline-block;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+footer .footer-logo a img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+footer .footer-logo a:hover {
+  filter: brightness(0.8);
+}
+footer .footer-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #f8f8f8;
+  vertical-align: middle;
+  line-height: 1;
+}
+footer .footer-social {
+  display: flex;
+  align-items: center;
+}
+footer .footer-social a {
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer .footer-social a img {
+  max-width: 32px;
+  height: auto;
+  vertical-align: middle;
+  transition: filter 0.3s ease;
+}
+footer .footer-social a img:hover {
+  filter: brightness(0.8);
+}/*# sourceMappingURL=about.css.map */

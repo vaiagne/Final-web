@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #777;
+  line-height: 1.6;
+  background-color: #f8f2e5;
+}
+
+header {
+  background-color: #000000;
+  padding: 6px 0;
+  color: #f8f8f8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .header-container .logo {
+  display: inline-block;
+}
+header .header-container .logo img {
+  max-width: 70px;
+  width: 100%;
+}
+header .header-container .logo:hover {
+  transform: scale(1.05);
+}
+header .header-container .main-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+header .header-container .main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header .header-container .main-nav ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+header .header-container .main-nav ul li a:hover {
+  color: #919191;
+}
+header .header-container .contact-button .button {
+  background-color: transparent;
+  color: #f8f8f8;
+  padding: 6px 12px;
+  border: 2px solid #919191;
+  text-decoration: none;
+  font-weight: 300;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+header .header-container .contact-button .button:hover {
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 8px auto;
+  text-transform: uppercase;
+}
+.gallery .gallery-item {
+  position: relative;
+  height: auto;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.gallery .gallery-item img {
+  width: 100%;
+  max-height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.gallery .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding to ensure centering */
+}
+
+.modal-content {
+  display: block;
+  max-width: 90vw; /* For horizontal images */
+  max-height: 90vh; /* For vertical images */
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto; /* Ensures the modal content is centered */
+  padding-top: 70px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  background-color: #000000;
+  color: #f8f8f8;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+}
+footer .footer-logo a {
+  display: inline-block;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+footer .footer-logo a img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+footer .footer-logo a:hover {
+  filter: brightness(0.8);
+}
+footer .footer-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #f8f8f8;
+  vertical-align: middle;
+  line-height: 1;
+}
+footer .footer-social {
+  display: flex;
+  align-items: center;
+}
+footer .footer-social a {
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer .footer-social a img {
+  max-width: 32px;
+  height: auto;
+  vertical-align: middle;
+  transition: filter 0.3s ease;
+}
+footer .footer-social a img:hover {
+  filter: brightness(0.8);
+}/*# sourceMappingURL=families.css.map */

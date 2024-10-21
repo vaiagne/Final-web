@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vestuvės - Agnė Vai Photo</title>
+    <!-- Link to the CSS file for Portretai page -->
+    <link rel="stylesheet" href="weddings.css" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-container">
+        <div class="logo" id="logo">
+          <a href="home/index.html">
+            <img src="logo_white-1.webp" alt="Agnė Vai Photography Logo" />
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul id="menu" class="menu">
+            <li><a href="home/portraits.html">PORTRETAI</a></li>
+            <li><a href="home/families.html">ŠEIMOS ŠVENTĖS</a></li>
+            <li><a href="home/weddings.html">VESTUVĖS</a></li>
+            <li><a href="home/stories.html">ISTORIJOS</a></li>
+            <li><a href="home/about.html">APIE MANE</a></li>
+            <li><a href="home/services.html">PASLAUGOS</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact-button">
+          <a href="kontaktai/contacts.html" class="button">SUSISIEKTI</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <div class="gallery-item">
+        <img
+          src="Daiva ir Ernestas (151).webp"
+          alt="wedding-1"
+          onclick="openModal(0)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Daiva ir Ernestas (154).webp"
+          alt="wedding-2"
+          onclick="openModal(1)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Daiva ir Ernestas (238).webp"
+          alt="wedding-3"
+          onclick="openModal(2)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img src="Vestuvės (1).webp" alt="wedding-4" onclick="openModal(3)" />
+      </div>
+      <div class="gallery-item">
+        <img src="Vestuvės (2).webp" alt="wedding-5" onclick="openModal(4)" />
+      </div>
+      <div class="gallery-item">
+        <img src="Vestuvės (3).webp" alt="wedding-6" onclick="openModal(5)" />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Saulė ir Eimantas (7).webp"
+          alt="wedding-7"
+          onclick="openModal(6)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Saulė ir Eimantas (12).webp"
+          alt="wedding-8"
+          onclick="openModal(7)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Saulė ir Eimantas (56).webp"
+          alt="wedding-9"
+          onclick="openModal(8)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="GintarėĄžuolasDovydas115.webp"
+          alt="wedding-10"
+          onclick="openModal(9)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="GintarėĄžuolasDovydas126.webp"
+          alt="wedding-11"
+          onclick="openModal(10)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="GintarėĄžuolasDovydas133.webp"
+          alt="wedding-12"
+          onclick="openModal(11)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Vėjūnė ir Klaidas175.webp"
+          alt="wedding-13"
+          onclick="openModal(12)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Vėjūnė ir Klaidas224.webp"
+          alt="wedding-14"
+          onclick="openModal(13)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Vėjūnė ir Klaidas276.webp"
+          alt="wedding-15"
+          onclick="openModal(14)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Monika ir Arūnas (15).webp"
+          alt="wedding-16"
+          onclick="openModal(15)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Monika ir Arūnas (385).webp"
+          alt="wedding-17"
+          onclick="openModal(16)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="Monika ir Arūnas (453).webp"
+          alt="wedding-18"
+          onclick="openModal(17)"
+        />
+      </div>
+    </section>
+
+    <!-- Modal for Image Viewing -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="logo_white-1.webp" alt="Agnė Vai Photo" />
+          </a>
+        </div>
+        <div class="footer-text">
+          <p>© 2024 AGNĖ VAI PHOTO. VISOS TEISĖS SAUGOMOS.</p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/agnev_photography/"
+            target="_blank"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=870&format=png&color=FFFFFF"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/agnevaiciakauskaitephotography/"
+            target="_blank"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=435&format=png&color=FFFFFF"
+              alt="Facebook"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for the modal and other interactions -->
+    <script src="weddings.js"></script>
+  </body>
+</html>

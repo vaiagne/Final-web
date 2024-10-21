@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Istorijos - Agnė Vai Photo</title>
+    <!-- Link to the CSS file for Istorijos page -->
+    <link rel="stylesheet" href="stories.css" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-container">
+        <div class="logo" id="logo">
+          <a href="home/index.html">
+            <img src="logo_white-1.webp" alt="Agnė Vai Photography Logo" />
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul id="menu" class="menu">
+            <li><a href="home/portraits.html">PORTRETAI</a></li>
+            <li><a href="home/families.html">ŠEIMOS ŠVENTĖS</a></li>
+            <li><a href="home/weddings.html">VESTUVĖS</a></li>
+            <li><a href="home/stories.html">ISTORIJOS</a></li>
+            <li><a href="home/about.html">APIE MANE</a></li>
+            <li><a href="home/services.html">PASLAUGOS</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact-button">
+          <a href="kontaktai/contacts.html" class="button">SUSISIEKTI</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <!-- Story 1: First image visible, rest hidden in data-images -->
+      <div
+        class="gallery-item"
+        data-story="1"
+        data-images='["story (1).jpg", "story (2).jpg", "story (3).jpg", "story (4).jpg", "story (5).jpg", "story (6).jpg", "story (7).jpg", "story (8).jpg"]'
+      >
+        <img src="story (8).jpg" alt="Story 1" onclick="openStory(1, 0)" />
+        <div class="overlay"><span>AISTĖ</span></div>
+      </div>
+
+      <!-- Story 2 -->
+      <div
+        class="gallery-item"
+        data-story="2"
+        data-images='["story (9).jpg", "story (10).jpg", "story (11).jpg", "story (12).jpg", "story (13).jpg", "story (14).jpg", "story (15).jpg", "story (16).jpg"]'
+      >
+        <img src="story (9).jpg" alt="Story 2" onclick="openStory(2, 0)" />
+        <div class="overlay"><span>SAKALI</span></div>
+      </div>
+
+      <!-- Story 3 -->
+      <div
+        class="gallery-item"
+        data-story="3"
+        data-images='["story (17).jpg", "story (18).jpg", "story (19).jpg", "story (20).jpg", "story (21).jpg", "story (22).jpg", "story (23).jpg", "story (24).jpg"]'
+      >
+        <img src="story (30).jpg" alt="Story 3" onclick="openStory(3, 0)" />
+        <div class="overlay"><span>VAIDILĖ</span></div>
+      </div>
+
+      <!-- Second row of stories -->
+      <div
+        class="gallery-item"
+        data-story="4"
+        data-images='["story (31).jpg", "story (32).jpg", "story (33).jpg", "story (34).jpg", "story (35).jpg"]'
+      >
+        <img src="story (33).jpg" alt="Story 4" onclick="openStory(4, 0)" />
+        <div class="overlay"><span>JUSTĖ</span></div>
+      </div>
+
+      <div
+        class="gallery-item"
+        data-story="5"
+        data-images='["story (36).jpg", "story (37).jpg", "story (38).jpg", "story (39).jpg", "story (40).jpg"]'
+      >
+        <img src="story (39).jpg" alt="Story 5" onclick="openStory(5, 0)" />
+        <div class="overlay"><span>JOLITA</span></div>
+      </div>
+
+      <div
+        class="gallery-item"
+        data-story="6"
+        data-images='["story (41).jpg", "story (42).jpg", "story (43).jpg", "story (44).jpg", "story (45).jpg", "story (46).jpg"]'
+      >
+        <img src="story (42).jpg" alt="Story 6" onclick="openStory(6, 0)" />
+        <div class="overlay"><span>DOMAS</span></div>
+      </div>
+    </section>
+
+    <!-- Modal for Image Viewing -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="logo_white-1.webp" alt="Agnė Vai Photo" />
+          </a>
+        </div>
+        <div class="footer-text">
+          <p>© 2024 AGNĖ VAI PHOTO. VISOS TEISĖS SAUGOMOS.</p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/agnev_photography/"
+            target="_blank"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=870&format=png&color=FFFFFF"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/agnevaiciakauskaitephotography/"
+            target="_blank"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=435&format=png&color=FFFFFF"
+              alt="Facebook"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for the modal and other interactions -->
+    <script src="stories.js"></script>
+  </body>
+</html>
