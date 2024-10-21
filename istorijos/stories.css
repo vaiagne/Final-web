@@ -12,14 +12,13 @@ body {
 }
 
 header {
-  background-color: #212121;
+  background-color: #000000;
   padding: 6px 0;
   color: #f8f8f8;
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
 }
 header .header-container {
   display: flex;
@@ -69,7 +68,7 @@ header .header-container .contact-button .button {
 }
 header .header-container .contact-button .button:hover {
   background-color: #f8f8f8;
-  color: #212121;
+  color: #000000;
 }
 
 .gallery {
@@ -185,12 +184,11 @@ header .header-container .contact-button .button:hover {
 }
 
 footer {
-  background-color: #212121;
+  background-color: #000000;
   color: #f8f8f8;
   padding: 10px 0;
   margin: 0;
   width: 100%;
-  background: linear-gradient(to top, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
 }
 footer .footer-container {
   display: flex;

@@ -1,6 +1,6 @@
 $primary-color: #919191;
-$background-color: #212121;
-$footer-background-color: #212121;
+$background-color: #000000;
+$footer-background-color: #000000;
 $white-color: #f8f8f8;
 $font-family: "Roboto", sans-serif;
 $breakpoint-mobile: 768px;
@@ -28,12 +28,6 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(33, 33, 33, 1) 0%,
-    rgba(33, 33, 33, 0.8) 97%,
-    rgba(248, 242, 229, 0) 95%
-  );
 
   .header-container {
     display: flex;
@@ -218,12 +212,6 @@ footer {
   padding: 10px 0;
   margin: 0;
   width: 100%;
-  background: linear-gradient(
-    to top,
-    rgba(33, 33, 33, 1) 0%,
-    rgba(33, 33, 33, 0.8) 97%,
-    rgba(248, 242, 229, 0) 95%
-  );
 
   .footer-container {
     display: flex;

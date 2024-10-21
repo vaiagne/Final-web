@@ -28,7 +28,7 @@ main {
 }
 
 header {
-  background-color: #212121;
+  background-color: #000000;
   padding: 6px 0;
   color: #f8f8f8;
   position: sticky;
@@ -85,7 +85,7 @@ header .header-container .contact-button .button {
 }
 header .header-container .contact-button .button:hover {
   background-color: #f8f8f8;
-  color: #212121;
+  color: #000000;
 }
 
 .services-section {
@@ -98,7 +98,7 @@ header .header-container .contact-button .button:hover {
 .services-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #212121;
+  color: #000000;
   text-transform: uppercase;
 }
 .services-section .card-container {
@@ -119,7 +119,7 @@ header .header-container .contact-button .button:hover {
 }
 .services-section .card h3 {
   font-size: 24px;
-  color: #212121;
+  color: #000000;
   margin-bottom: 15px;
 }
 .services-section .card ul {
@@ -135,7 +135,7 @@ header .header-container .contact-button .button:hover {
 }
 
 footer {
-  background-color: #212121;
+  background-color: #000000;
   color: #f8f8f8;
   padding: 10px 0;
   width: 100%;

@@ -19,7 +19,6 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
 }
 header .header-container {
   display: flex;
@@ -169,7 +168,6 @@ footer {
   padding: 10px 0;
   margin: 0;
   width: 100%;
-  background: linear-gradient(to top, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.8) 97%, rgba(248, 242, 229, 0) 95%);
 }
 footer .footer-container {
   display: flex;
