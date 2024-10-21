@@ -113,7 +113,7 @@ header .header-container .contact-button .button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Added padding to ensure centering */
+  padding: 20px;
 }
 
 .modal-content {

@@ -19,7 +19,6 @@ function changeImage(direction) {
   document.getElementById("modalImage").src = images[currentIndex].src;
 }
 
-// Close modal when clicking outside the modal image
 window.onclick = function (event) {
   const modal = document.getElementById("imageModal");
   if (event.target === modal) {
